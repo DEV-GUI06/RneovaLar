@@ -1,0 +1,242 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: tahoma, verdana;
+}
+
+.container {
+  width: 100%;
+  max-width: 1480px;
+  margin: 0 auto;
+}
+
+.clear {
+  clear: both;
+}
+
+header {
+  background-color: #0a263e;
+  padding: 10px 2%;
+}
+
+.logo1 {
+  float: left;
+  width: 100px;
+  height: 100px;
+  background-image: url(imgs/logo1);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.bg {
+  position: relative;
+  height: 500px;
+  background-image: url("imgs/bg.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.chamada-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+.chamada-container h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+  text-shadow: #000000 1px 0px 12px;
+}
+.chamada-container span {
+  color: #f3a229;
+  text-shadow: #000000;
+}
+.chamada-container p {
+  font-size: 20px;
+  text-shadow: #000000 1px 0px 12px;
+}
+
+section.chamada .container {
+  max-width: 1480px;
+  margin: 0 auto;
+  padding: 30px 0;
+  background-color: #0a263e;
+  color: white;
+}
+
+section.chamada {
+  text-align: center;
+}
+
+section.chamada h2 {
+  display: inline-block;
+}
+
+section.chamada p {
+  font-size: 18px;
+  margin-top: 5px;
+}
+
+.arrow {
+  position: relative;
+  top: 50px;
+  left: 50%;
+  margin-left: -20px;
+  margin-top: -30px;
+  width: 40px;
+  height: 40px;
+  background-image: url("imgs/arrow.png");
+  background-size: 100%;
+}
+
+.flex-mosaico {
+  display: flex;
+}
+
+.item1-mosaico {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 70%;
+  border-top: 1px solid white;
+}
+
+.item2-mosaico {
+  font-size: 18px;
+  padding: 100px 40px;
+  width: 30%;
+  background-color: #0a263e;
+  color: white;
+  border-top: 1px solid white;
+}
+
+section.links .container {
+  max-width: 1480px;
+  margin: 0 auto;
+  padding: 30px 0;
+  background-color: #0a263e;
+  color: white;
+  border-top: 1px solid white;
+}
+
+section.links {
+  text-align: center;
+  border-bottom: 1px solid white;
+}
+
+section.links h2 {
+  margin-bottom: 30px;
+}
+
+.whatsapp a {
+  margin: 0 auto;
+  padding: 8px 16px;
+  background-color: #f3a229;
+  border-radius: 10px;
+  color: white;
+  text-decoration: none;
+  font-size: 19px;
+  transition: 200ms all ease-in-out;
+}
+.whatsapp a:hover {
+  background-color: #3b832d;
+}
+
+.instagram p {
+  margin-top: 30px;
+  font-size: 18px;
+}
+
+.instagram a img {
+  width: 50px;
+  margin-top: 10px;
+  transition: 200ms all ease-in-out;
+}
+
+footer {
+  padding: 40px;
+  text-align: center;
+  background-color: #0a263e;
+}
+footer p {
+  margin-top: 5px;
+  color: rgb(255, 255, 255);
+}
+
+@media screen and (max-width: 510px) {
+  .logo1,
+  .logo2 {
+    margin-top: 10px;
+    display: inline-block;
+    float: none;
+  }
+
+  header {
+    text-align: center;
+  }
+
+  .chamada-container p {
+    text-align: center;
+    font-size: 18px;
+  }
+  .chamada-container h1 {
+    font-size: 27px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .flex-mosaico {
+    display: block;
+  }
+  .item1-mosaico {
+    width: 100%;
+    height: 250px;
+  }
+  .item2-mosaico {
+    width: 100%;
+    padding: 40px;
+    font-size: 17px;
+  }
+  .chamada-container p {
+    text-align: center;
+    font-size: 18px;
+  }
+  .chamada-container h1 {
+    font-size: 27px;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .bg {
+    text-align: center;
+  }
+  .bg p {
+    text-align: left;
+  }
+  .chamada-container p {
+    text-align: center;
+  }
+  .links .instagram p {
+    font-size: 17px;
+  }
+  .form-container {
+    position: static;
+    display: inline-block;
+    margin-top: 25px;
+  }
+  section.chamada h2 {
+    font-size: 22px;
+  }
+  section.chamada p {
+    font-size: 15px;
+  }
+  section.links h2 {
+    font-size: 22px;
+  }
+  section.links p {
+    font-size: 15px;
+  }
+}
