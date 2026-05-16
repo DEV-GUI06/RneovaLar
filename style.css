@@ -15,15 +15,20 @@
   clear: both;
 }
 
+img {
+  -webkit-user-drag: none;
+  user-select: none;
+}
+
 header {
-  background-color: #0a263e;
+  background-color: #192919;
   padding: 10px 2%;
 }
 
 .logo1 {
   margin: 0 auto;
-  width: 200px;
-  height: 120px;
+  width: 150px;
+  height: 150px;
   background-image: url(imgs/Logo2.png);
   background-size: 100% 100%;
   background-repeat: no-repeat;
@@ -51,7 +56,7 @@ header {
   text-shadow: #000000 1px 0px 12px;
 }
 .chamada-container span {
-  color: #f3a229;
+  color: #ffbd43;
   text-shadow: #000000;
 }
 .chamada-container p {
@@ -63,7 +68,7 @@ section.chamada .container {
   max-width: 1480px;
   margin: 0 auto;
   padding: 30px 5px;
-  background-color: #0a263e;
+  background-color: #192919;
   color: white;
 }
 
@@ -108,7 +113,7 @@ section.chamada p {
   font-size: 18px;
   padding: 100px 40px;
   width: 30%;
-  background-color: #0a263e;
+  background-color: #192919;
   color: white;
   border-top: 1px solid white;
 }
@@ -117,7 +122,7 @@ section.links .container {
   max-width: 1480px;
   margin: 0 auto;
   padding: 30px 0;
-  background-color: #0a263e;
+  background-color: #192919;
   color: white;
   border-top: 1px solid white;
 }
@@ -134,9 +139,9 @@ section.links h2 {
 .whatsapp a {
   margin: 0 auto;
   padding: 8px 16px;
-  background-color: #f3a229;
+  background-color: #d1a554;
   border-radius: 10px;
-  color: #0a263e;
+  color: #192919;
   text-decoration: none;
   font-size: 19px;
   transition: 200ms all ease-in-out;
@@ -160,10 +165,128 @@ section.links h2 {
   transform: scale(1.1);
 }
 
+/* SOBRE */
+
+section.sobre-renovalar {
+  background-color: #192919;
+  color: white;
+  padding: 60px 20px;
+  max-width: 1480px;
+  margin: 0 auto;
+  text-align: center;
+  border-top: 1px solid white;
+}
+
+section.sobre-renovalar h2 {
+  font-size: 32px;
+  margin-bottom: 25px;
+  color: #d1a554;
+}
+
+section.sobre-renovalar p {
+  max-width: 900px;
+  margin: 0 auto 20px auto;
+  line-height: 1.8;
+  font-size: 18px;
+}
+
+/* CARROSSEL */
+
+section.carrossel {
+  background-color: #283828;
+  max-width: 1480px;
+  margin: 0 auto;
+  padding: 60px 0;
+  overflow: hidden;
+}
+
+section.carrossel h2 {
+  text-align: center;
+  color: #d1a554;
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+
+.container-carrossel {
+  width: 100%;
+  max-width: 1380px;
+  margin: 0 auto;
+}
+
+.carrossel-wrapper {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+/* GRADIENTE ESQUERDO */
+
+.carrossel-wrapper::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 120px;
+  height: 100%;
+  z-index: 2;
+
+  background: linear-gradient(
+    to right,
+    #081c2e 0%,
+    rgba(8, 28, 46, 0.8) 10%,
+    rgba(8, 28, 46, 0) 50%
+  );
+}
+
+/* GRADIENTE DIREITO */
+
+.carrossel-wrapper::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 120px;
+  height: 100%;
+  z-index: 2;
+
+  background: linear-gradient(
+    to left,
+    #081c2e 0%,
+    rgba(8, 28, 46, 0.8) 10%,
+    rgba(8, 28, 46, 0) 50%
+  );
+}
+
+.carrossel-track {
+  display: flex;
+  width: max-content;
+  animation: slide 25s linear infinite;
+}
+
+.carrossel-track img {
+  width: 350px;
+  height: 250px;
+  object-fit: cover;
+  margin: 0 15px;
+  border-radius: 15px;
+  border: 3px solid #d1a554;
+  transition: 0s;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
 footer {
   padding: 40px;
   text-align: center;
-  background-color: #0a263e;
+  background-color: #192919;
 }
 footer p {
   margin-top: 5px;
@@ -214,6 +337,20 @@ footer .dev {
   }
   .chamada-container h1 {
     font-size: 27px;
+  }
+
+  section.sobre-renovalar h2,
+  section.carrossel h2 {
+    font-size: 26px;
+  }
+
+  section.sobre-renovalar p {
+    font-size: 16px;
+  }
+
+  .carrossel-track img {
+    width: 260px;
+    height: 180px;
   }
 }
 
