@@ -22,9 +22,9 @@ header {
 
 .logo1 {
   margin: 0 auto;
-  width: 150px;
-  height: 150px;
-  background-image: url(imgs/logo-renovalar.png);
+  width: 200px;
+  height: 120px;
+  background-image: url(imgs/Logo2.png);
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
