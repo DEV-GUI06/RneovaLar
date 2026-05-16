@@ -232,9 +232,9 @@ section.carrossel h2 {
 
   background: linear-gradient(
     to right,
-    #081c2e 0%,
-    rgba(8, 28, 46, 0.8) 10%,
-    rgba(8, 28, 46, 0) 50%
+    #283828 0%,
+    rgba(40, 56, 40, 0.8) 10%,
+    rgba(40, 56, 40, 0) 50%
   );
 }
 
@@ -251,9 +251,9 @@ section.carrossel h2 {
 
   background: linear-gradient(
     to left,
-    #081c2e 0%,
-    rgba(8, 28, 46, 0.8) 10%,
-    rgba(8, 28, 46, 0) 50%
+    rgb(40, 56, 40) 0%,
+    rgba(40, 56, 40, 0.8) 10%,
+    rgba(40, 56, 40, 0) 50%
   );
 }
 
